@@ -75,3 +75,32 @@ textC.appendChild(lineB)
 
 //main-section 
 
+const topC = document.querySelector('.top-content');
+topC.querySelector('.text-content h4').textContent = siteContent['main-content']['features-h4']
+topC.querySelector('.text-content p').textContent = siteContent['main-content']['features-content']
+topC.querySelector('.text-content:nth-of-type(2) h4').textContent = siteContent['main-content']['about-h4']
+topC.querySelector('.text-content:nth-of-type(2) p').textContent = siteContent['main-content']['about-content']
+
+const middleImg = document.querySelector('.middle-img');
+middleImg.src = 'img/mid-page-accent.jpg'
+
+const bottomC = document.querySelector('.bottom-content');
+bottomC.querySelector('.text-content h4').textContent = siteContent['main-content']['services-h4']
+bottomC.querySelector('.text-content p').textContent = siteContent['main-content']['services-content']
+bottomC.querySelector('.text-content:nth-of-type(2) h4').textContent = siteContent['main-content']['product-h4']
+bottomC.querySelector('.text-content:nth-of-type(2) p').textContent = siteContent['main-content']['product-content']
+bottomC.querySelector('.text-content:nth-of-type(3) h4').textContent = siteContent['main-content']['vision-h4']
+bottomC.querySelector('.text-content:nth-of-type(3) p').textContent = siteContent['main-content']['vision-content']
+
+//Contact
+
+const contactInfo = document.querySelector('.contact');
+contactInfo.querySelector('h4').textContent = siteContent.contact['contact-h4']
+contactInfo.querySelector('p').textContent = siteContent.contact['address']
+contactInfo.querySelector('p:nth-of-type(2)').textContent = siteContent.contact['phone']
+contactInfo.querySelector('p:nth-of-type(3)').textContent = siteContent.contact['email']
+
+// footer
+
+const footerInfo = document.querySelector('footer');
+footerInfo.querySelector('p').textContent = siteContent['footer']['copyright']
