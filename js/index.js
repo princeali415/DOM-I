@@ -62,3 +62,16 @@ contact.textContent = siteContent.nav['nav-item-6']
 
 let code = document.getElementById('cta-img');
 code.setAttribute('src', siteContent['cta']['img-src'])
+
+const imgC = document.querySelector('#cta-img')
+const textC = document.querySelector('.cta-text h1')
+const lineB = document.createElement('br')
+const btn = document.querySelector('button')
+
+textC.textContent = siteContent.cta.h1
+textC.appendChild(lineB)
+btn.textContent = siteContent.cta.button
+textC.appendChild(lineB)
+
+//main-section 
+
